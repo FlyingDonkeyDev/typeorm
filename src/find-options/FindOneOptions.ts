@@ -14,7 +14,7 @@ export interface FindOneOptions<Entity> {
     /**
      * Simple condition that should be applied to match entities.
      */
-    where?: Partial<Entity>|ObjectLiteral|string;
+    where?: any;
 
     /**
      * Indicates what relations of entity should be loaded (simplified left join form).

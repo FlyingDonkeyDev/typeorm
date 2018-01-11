@@ -104,8 +104,13 @@ export class FindOptionsUtils {
             qb.select(options.select.map(selection => qb.alias + "." + selection));
         }
 
-        if (options.where)
-            qb.where(options.where);
+        if (options.where) {
+            if (options.where.constructor.name == "Array") {
+                qb.where(options.where[0], options.where[1]);
+            } else {
+                qb.where(options.where);
+            }
+        }
 
         if ((options as FindManyOptions<T>).skip)
             qb.skip((options as FindManyOptions<T>).skip!);
