@@ -1,5 +1,4 @@
 import {JoinOptions} from "./JoinOptions";
-import {ObjectLiteral} from "../common/ObjectLiteral";
 
 /**
  * Defines a special criteria to find specific entity.
