@@ -1,1 +1,0 @@
-{"version":3,"file":"ConnectionIsNotSetError.js","sourceRoot":"","sources":["../../../../src/error/ConnectionIsNotSetError.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA;;GAEG;AACH;IAA6C,2CAAK;IAG9C,iCAAY,MAAc;QAA1B,YACI,iBAAO,SAEV;QALD,UAAI,GAAG,yBAAyB,CAAC;QAI7B,KAAI,CAAC,OAAO,GAAG,qBAAmB,MAAM,kEAA+D,CAAC;;IAC5G,CAAC;IAEL,8BAAC;AAAD,CAAC,AARD,CAA6C,KAAK,GAQjD;AARY,0DAAuB"}

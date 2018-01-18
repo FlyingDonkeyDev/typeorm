@@ -436,7 +436,7 @@ export class Connection {
      */
     protected findMetadata(target: Function|string): EntityMetadata|undefined {
         return this.entityMetadatas.find(metadata => {
-            if (metadata.target === target)
+            if (metadata.target.toString() === target.toString())
                 return true;
             if (typeof target === "string") {
                 if (target.indexOf(".") !== -1) {

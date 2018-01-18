@@ -30747,7 +30747,7 @@ System.register("typeorm/connection/Connection", ["typeorm/naming-strategy/Defau
                  */
                 Connection.prototype.findMetadata = function (target) {
                     return this.entityMetadatas.find(function (metadata) {
-                        if (metadata.target === target)
+                        if (metadata.target.toString() === target.toString())
                             return true;
                         if (typeof target === "string") {
                             if (target.indexOf(".") !== -1) {
